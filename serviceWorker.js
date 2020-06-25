@@ -2,7 +2,7 @@
 
 const CACHE_NAME = 'pwa'; //キャッシュさせる時のキャッシュ名
 const urlsToCache = [
-  './'
+  './index.html'
 ];
 
 self.addEventListener('install', (event) => {
