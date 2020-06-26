@@ -2,6 +2,7 @@
 
 const CACHE_NAME = 'pwa'; //キャッシュさせる時のキャッシュ名
 const urlsToCache = [
+  './',
   './index.html',
   './common.css',
   './main.js',
