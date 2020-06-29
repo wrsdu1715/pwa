@@ -6,6 +6,7 @@ const urlsToCache = [
   './index.html',
   './common.css',
   './main.js',
+  './manifest.json'
 ];
 
 self.addEventListener('install', (event) => { //install時
