@@ -1,12 +1,18 @@
 {
   "name": "swpractice",
-  "shot_name": "sw",
+  "shot_name": "swpractice",
   "icons": [{
-    "src": "test",
+    "src": "/images/icons-192.png",
     "size": "192x192",
-    "type": "image/jpg"
+    "type": "image/png"
+  },
+  {
+    "src": "/images/icons-512.png",
+    "size": "512x512",
+    "type": "image/png"
   }],
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone",
-  "gcm_sender_id": "357335733"
+  "theme_color": "#4cb7c3",
+  "background_color": "#ececec"
 }

@@ -32,7 +32,7 @@ self.addEventListener('active', (event) => {
       return Promise.all(
         cacheNames.map((cacheName) => {  //ホワイトリストにないキャッシュは削除させる。
           if (cacheWhitelist.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
+            return caches.delete(cacheName); //キャッシュを消す。
           }
         })
       );
@@ -59,9 +59,8 @@ self.addEventListener('fetch', (event) => {　//ページの更新などで、Se
           let responseToCache = response.clone();
           cache.open(CACHE_NAME)
             .then((cache) => {
-              cache.put(event.request, responseToCache);
+              cache.put(event.request, responseToCache); //リクエストとレスポンスを受け取り指定されたキャッシュへ追加する。
             });
-
             return response;
         });
      })
