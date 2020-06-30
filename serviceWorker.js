@@ -6,7 +6,8 @@ const urlsToCache = [
   './index.html',
   './common.css',
   './main.js',
-  './manifest.json'
+  './manifest.json',
+  '/images/index/hapikuru.jpg'
 ];
 
 self.addEventListener('install', (event) => { //install時
