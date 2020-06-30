@@ -1,7 +1,13 @@
 {
   "name": "swpractice",
   "short_name": "swpractice",
-  "icons": [{
+  "icons": [
+  {
+    "src": "/images/icons-144.png",
+    "type": "image/png",
+    "size": "144x144"
+  },  
+  {
     "src": "/images/icons-192.png",
     "type": "image/png",
     "size": "192x192"
