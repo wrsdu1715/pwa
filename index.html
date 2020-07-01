@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="theme-color" content="#4cb7c3"/>
     <title>SW</title>
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json"> 
     <link rel="stylesheet" href="/common.css">
     <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png">
     <script src="/main.js"></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "750b9dca-7168-442f-8c4c-605642e500af",
+        });
+      });
+    </script>
 </head>
 <body>
   <header>
